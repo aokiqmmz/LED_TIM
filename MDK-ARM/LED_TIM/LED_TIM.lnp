@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"led_tim\startup_stm32f427xx.o"
+"led_tim\main.o"
+"led_tim\gpio.o"
+"led_tim\tim.o"
+"led_tim\stm32f4xx_it.o"
+"led_tim\stm32f4xx_hal_msp.o"
+"led_tim\callback.o"
+"led_tim\stm32f4xx_hal_tim.o"
+"led_tim\stm32f4xx_hal_tim_ex.o"
+"led_tim\stm32f4xx_hal_rcc.o"
+"led_tim\stm32f4xx_hal_rcc_ex.o"
+"led_tim\stm32f4xx_hal_flash.o"
+"led_tim\stm32f4xx_hal_flash_ex.o"
+"led_tim\stm32f4xx_hal_flash_ramfunc.o"
+"led_tim\stm32f4xx_hal_gpio.o"
+"led_tim\stm32f4xx_hal_dma_ex.o"
+"led_tim\stm32f4xx_hal_dma.o"
+"led_tim\stm32f4xx_hal_pwr.o"
+"led_tim\stm32f4xx_hal_pwr_ex.o"
+"led_tim\stm32f4xx_hal_cortex.o"
+"led_tim\stm32f4xx_hal.o"
+"led_tim\stm32f4xx_hal_exti.o"
+"led_tim\system_stm32f4xx.o"
+--strict --scatter "LED_TIM\LED_TIM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LED_TIM.map" -o LED_TIM\LED_TIM.axf
